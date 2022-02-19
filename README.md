@@ -9,3 +9,4 @@
 * [Настройка подсветки терминала](bashrc.md)
 * [Установка docker и docker compose](docker.md)
 * [Установка и настройка nginx](nginx.md)
+* [Настройка кэширования в nginx](nginx.cache.md)

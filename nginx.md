@@ -39,3 +39,5 @@ sudo systemctl start nginx
 ```
 
 Теперь по адресу a-0.example.com будет страница "Welcome to nginx!"
+
+[Настройка кэширования в nginx](nginx.cache.md)
