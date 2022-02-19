@@ -98,3 +98,5 @@ sudo visudo
 ```
 perun ALL=NOPASSWD: /usr/bin/docker
 ```
+
+[Установка и настройка nginx](nginx.md)

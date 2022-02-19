@@ -8,3 +8,4 @@
 * [Создание пользователя](user.md)
 * [Настройка подсветки терминала](bashrc.md)
 * [Установка docker и docker compose](docker.md)
+* [Установка и настройка nginx](nginx.md)
