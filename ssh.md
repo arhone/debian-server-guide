@@ -1,6 +1,7 @@
-[На главную](README.md)
+* [На главную](README.md)
+* [Назад: Выбор названия сервера и смена hostname](hostname.md)
 
-# Информация
+## Информация
 В примерах используется адрес сайта a-0.example.com [Подробнее](hostname.md)
 
 # Подключение к серверу по ssh
@@ -15,4 +16,4 @@ ssh-copy-id root@a-0.example.com
 ssh root@a-0.example.com
 ```
 
-[Обновление](update.md)
+* [Далее: Обновление пакетов](update.md)

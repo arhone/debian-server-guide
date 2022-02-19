@@ -1,6 +1,7 @@
-[На главную](README.md)
+* [На главную](README.md)
+* [Назад: Установка docker и docker compose](docker.md)
 
-# Информация
+## Информация
 В примерах используется адрес сайта a-0.example.com [Подробнее](hostname.md)
 
 # Установка и первоначальная настройка nginx
@@ -43,4 +44,4 @@ sudo systemctl start nginx
 
 Теперь по адресу a-0.example.com будет страница "Welcome to nginx!"
 
-[Настройка кэширования в nginx](nginx.cache.md)
+* [Далее: Настройка кэширования в nginx](nginx.cache.md)

@@ -1,8 +1,9 @@
-[На главную](README.md)
+* [На главную](README.md)
+* [Назад: Настройка подсветки терминала](bashrc.md)
 
 # Установка docker и docker compose v2 на debian 10
 
-# Информация
+## Информация
 В примерах используется имя пользователя "perun" [Подробнее](user.md)
 
 ## Установка docker engine
@@ -102,4 +103,4 @@ sudo visudo
 perun ALL=NOPASSWD: /usr/bin/docker
 ```
 
-[Установка и настройка nginx](nginx.md)
+* [Далее: Установка и настройка nginx](nginx.md)

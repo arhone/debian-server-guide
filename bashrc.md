@@ -1,6 +1,7 @@
-[На главную](README.md)
+* [На главную](README.md)
+* [Назад: Создание пользователя](user.md)
 
-# Информация
+## Информация
 В примерах используется имя пользователя "perun" [Подробнее](user.md)
 
 # Настройка .bashrc
@@ -65,4 +66,4 @@ git clone https://github.com/arhone/debian-server-guide.git /srv/debian-server-g
 cd /srv/debian-server-guide
 ```
 
-[Установка docker и docker compose](docker.md)
+* [Далее: Установка docker и docker compose](docker.md)
