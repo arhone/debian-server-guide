@@ -89,3 +89,12 @@ sudo docker compose -f docker-compose.yml up -d --build --remove-orphans
 sudo docker container ls
 sudo docker exec -it docker-alpine-01 /bin/sh
 ```
+
+## Разрешить команду sudo docker без запроса пароля 
+```
+sudo visudo
+```
+Добавить запись (perun - это имя пользователя для примера)
+```
+perun ALL=NOPASSWD: /usr/bin/docker
+```
