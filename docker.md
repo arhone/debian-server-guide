@@ -1,5 +1,5 @@
 * [На главную](README.md)
-* [Назад: Настройка подсветки терминала](bashrc.md)
+* [Назад: Обновление пакетов](update.md)
 
 # Установка docker и docker compose v2 на debian 10
 
