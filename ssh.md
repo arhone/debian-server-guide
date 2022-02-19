@@ -16,4 +16,4 @@ ssh-copy-id root@a-0.example.com
 ssh root@a-0.example.com
 ```
 
-* [Далее: Обновление пакетов](update.md)
+* [Далее: Создание пользователя](user.md)
