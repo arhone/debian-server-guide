@@ -1,6 +1,6 @@
 [На главную](README.md)
 
-# Установка и настройка nginx
+# Установка и первоначальная настройка nginx
 
 Nginx обрабатывает огромное количество запросов.
 
@@ -22,3 +22,20 @@ cd /tmp
 git clone https://github.com/arhone/debian-server-guide.git
 sudo cp /tmp/debian-server-guide/config/nginx/nginx.conf /etc/nginx/nginx.conf
 ```
+
+Проверяем правильность настроек
+```
+sudo nginx -t
+```
+
+Добавляем nginx в автозапуск
+```
+sudo systemctl enable nginx
+```
+
+Запускаем nginx
+```
+sudo systemctl start nginx
+```
+
+Теперь по адресу a-0.example.com будет страница "Welcome to nginx!"
