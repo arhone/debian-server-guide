@@ -1,6 +1,6 @@
 [На главную](README.md)
 
-# Установка docker и docker compose на debian 10
+# Установка docker и docker compose v2 на debian 10
 
 ## Установка docker engine
 
@@ -35,9 +35,9 @@ sudo apt install docker-ce docker-ce-cli containerd.io
 ```
 
 ## Установка docker compose
-Создаём директорию docker для текущего пользователя
+Создаём директорию docker для всех пользователей
 ```
-mkdir -p ~/.docker/cli-plugins/
+sudo mkdir -p /usr/local/lib/docker/cli-plugins
 ```
 
 Проверяем последнюю версию [docker compose](https://github.com/docker/compose/releases)
@@ -46,15 +46,46 @@ mkdir -p ~/.docker/cli-plugins/
 
 Скачиваем последнюю версию
 ```
-curl -SL https://github.com/docker/compose/releases/download/v2.2.3/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose
+sudo curl -SL https://github.com/docker/compose/releases/download/v2.2.3/docker-compose-linux-x86_64 -o /usr/local/lib/docker/cli-plugins/docker-compose
 ```
 
 Устанавливаем права на доступ к исполняемому файлу
 ```
-chmod +x ~/.docker/cli-plugins/docker-compose
+sudo chmod +x /usr/local/lib/docker/cli-plugins/docker-compose
 ```
 
 Проверим версию compose
 ```
 docker compose version
+```
+
+## Проверка сборки и запуска контейнера
+
+Перейдём в директорию проектов
+```
+cd /srv
+```
+
+Создадим директорию docker-alpine и дадим права текущему пользователю
+```
+sudo mkdir docker-alpine
+sudo chown $USER:$USER docker-alpine
+```
+
+Клонируем проект [docker-alpine](https://github.com/arhone/docker-alpine) в директорию docker-alpine
+```
+git clone https://github.com/arhone/docker-alpine.git /srv/docker-alpine
+```
+
+Перейдём в директорию docker-alpine, соберём и запустим контейнер
+```
+cd /srv/docker-alpine
+cp .env.example .env
+sudo docker compose -f docker-compose.yml up -d --build --remove-orphans
+```
+
+Проверим есть ли такой контейнер и зайдём в него
+```
+sudo docker container ls
+sudo docker exec -it docker-alpine-01 /bin/sh
 ```
