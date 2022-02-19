@@ -1,4 +1,4 @@
-# debian-server-configuring
+# debian-server-guide
 Инструкция по настройке сервера на OS Linux Debian
 
 # Настройка
@@ -139,22 +139,22 @@ fi
 
 Теперь проверим работу подсветки ветки git и заодно сохраним этот проект настройки в директории для проектов /srv
 
-Создаём директорию debian-server-configuring
+Создаём директорию debian-server-guide
 ```
-sudo mkdir /srv/debian-server-configuring 
+sudo mkdir /srv/debian-server-guide 
 ```
 
 Меняем владельца директории с root, на perun
 ```
-sudo chown $USER:$USER /srv/debian-server-configuring/
+sudo chown $USER:$USER /srv/debian-server-guide/
 ```
 
-Клонируем этот репозиторий в директорию debian-server-configuring
+Клонируем этот репозиторий в директорию debian-server-guide
 ```
-git clone https://github.com/arhone/debian-server-configuring.git /srv/debian-server-configuring/
+git clone https://github.com/arhone/debian-server-guide.git /srv/debian-server-guide/
 ```
 
 Заходим в директорию проекта и видим ветку [main]
 ```
-cd /srv/debian-server-configuring
+cd /srv/debian-server-guide
 ```
