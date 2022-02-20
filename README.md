@@ -1,5 +1,5 @@
 # debian-server-guide
-Шпаргалки по настройке сервера на OS Linux Debian
+Шпаргалки по настройке сервера на OS Linux Debian 10
 
 ## Информация
 В примерах используется адрес сайта a-0.example.com [Подробнее](hostname.md)
@@ -14,4 +14,5 @@
 * [Обновление пакетов](update.md)
 * [Установка docker и docker compose](docker.md)
 * [Установка и настройка nginx](nginx.md)
+* [Настройка виртуальных хостов в nginx](nginx.virtual.hosts.md)
 * [Настройка кэширования в nginx](nginx.cache.md)

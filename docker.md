@@ -94,6 +94,21 @@ sudo docker container ls
 sudo docker exec -it docker-alpine-01 /bin/sh
 ```
 
+Больше этот контейнер не понадобится, остановим его
+```
+sudo docker stop docker-alpine-01
+```
+
+Теперь посмотрим список всех контейнеров
+```
+sudo docker container ls -a
+```
+
+Удалим этот контейнер
+```
+sudo docker container rm id_контейнера
+```
+
 ## Разрешить команду sudo docker без запроса пароля 
 ```
 sudo visudo

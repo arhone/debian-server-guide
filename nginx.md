@@ -25,6 +25,7 @@ sudo apt install nginx
 cd /tmp
 git clone https://github.com/arhone/debian-server-guide.git
 sudo cp /tmp/debian-server-guide/config/nginx/nginx.conf /etc/nginx/nginx.conf
+rm -rf /tmp/debian-server-guide
 ```
 
 Проверяем правильность настроек
@@ -44,4 +45,4 @@ sudo systemctl start nginx
 
 Теперь по адресу a-0.example.com будет страница "Welcome to nginx!"
 
-* [Далее: Настройка кэширования в nginx](nginx.cache.md)
+* [Далее: Настройка виртуальных хостов в nginx](nginx.virtual.hosts.md)
